@@ -1,0 +1,136 @@
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-image: url(bg.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1px;
+}
+.container {
+  width: 70%;
+  margin: 60px auto;
+  background-color: white;
+  padding: 30px 30px 40px 30px;
+  border-radius: 7px;
+}
+.msg {
+  height: 3vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 3px;
+  font-size: 13px;
+  transition: ease-in-out .1s linear;
+  border-radius: 5px;
+}
+h1 {
+  padding: 15px 0px;
+  text-align: center;
+  font-size: 25px;
+}
+.add-task {
+  display: flex;
+}
+.input {
+  width: 100%;
+  padding: 7px 13px;
+  font-size: 17px;
+  outline: none;
+  border: 0;
+  background-color: rgb(241, 241, 241);
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+.btn {
+  padding: 0px 18px;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  color: white;
+  font-size: 17px;
+  background-color: rgb(0, 93, 105);
+}
+.list {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ grid-gap: 1.5rem;
+}
+ol {
+  margin: 30px 0px;
+  counter-reset: my-counter;
+}
+h2 {
+  text-align: center;
+  font-size: 15px;
+  border-bottom: 1px solid rgb(187, 187, 187);
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+ol li {
+  list-style: none;
+  padding: 5px;
+  margin: 7px 0px;
+  background-color: #e96969bb;
+  font-size: 14px;
+  counter-increment: my-counter;
+}
+ol li::before {
+  content: counter(my-counter);
+  width: 1.5rem;
+  height: 1.5rem;
+  text-align: center;
+  line-height: 1.5rem;
+  color: white;
+  background-color: blue;
+  display: inline-block;
+  border-radius: 100%;
+  margin-right: 7px;
+}
+ol li button {
+  outline: none;
+  border: 0;
+  float: right;
+  text-align: center;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1.5rem;
+  transition: all .3s;
+  margin-right: 10px;
+}
+ol li button:nth-child(1) {
+  color: #9bff9b;
+}
+ol li button:nth-child(2) {
+  color: rgb(255, 76, 76);
+}
+ol li button:nth-child(1):hover {
+  color: #44f044;
+}
+ol li button:nth-child(2):hover {
+  color: rgb(253, 40, 40);
+}
+.web-link {
+  margin-top: 30px;
+  text-align: center;
+}
+.web-link a {
+  text-decoration: none;
+  color: rgb(151, 151, 151);
+}
+@media screen and (max-width: 800px) {
+  .list {grid-template-columns: 1fr;}
+}
+@media screen and (max-width: 500px) {
+  .container {
+    width: 80%;
+    padding: 20px 20px 30px 20px;
+  }
+}
