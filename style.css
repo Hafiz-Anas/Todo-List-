@@ -57,7 +57,7 @@ h1 {
   font-size: 17px;
   background-color: rgb(0, 93, 105);
 }
-.list {
+.lists {
  display: grid;
  grid-template-columns: 1fr 1fr;
  grid-gap: 1.5rem;
@@ -97,7 +97,6 @@ ol li button {
   outline: none;
   border: 0;
   float: right;
-  text-align: center;
   background-color: transparent;
   cursor: pointer;
   font-size: 18px;
