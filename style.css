@@ -125,7 +125,7 @@ ol li button:nth-child(2):hover {
   color: rgb(151, 151, 151);
 }
 @media screen and (max-width: 800px) {
-  .list {grid-template-columns: 1fr;}
+  .lists {grid-template-columns: 1fr;}
 }
 @media screen and (max-width: 500px) {
   .container {
